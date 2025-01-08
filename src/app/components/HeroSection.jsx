@@ -15,14 +15,14 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Emeka",
                 1000,
                 "Web Developer",
                 1000,
@@ -47,14 +47,17 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+            <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
+              <a
+                href="/images/CV/Olisemeka Okpaleke CV (2).pdf" // Path to your CV file
+                download="Olisemeka_Okpaleke_CV.pdf"          // Optional: Custom filename for download
+                className="block bg-[#121212] hover:bg-slate-800 text-white rounded-full px-5 py-2 text-center"
+              >
                 Download CV
-              </span>
-            </Link>
+              </a>
+            </div>
+
+
           </div>
         </motion.div>
         <motion.div
@@ -65,8 +68,8 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
-              alt="hero image"
+              src="/images/me.png"
+              alt="Hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
